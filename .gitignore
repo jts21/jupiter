@@ -24,3 +24,10 @@ hs_err_pid*
 replay_pid*
 
 .DS_Store
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
