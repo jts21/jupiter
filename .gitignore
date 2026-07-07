@@ -31,3 +31,5 @@ replay_pid*
 !.dev.vars.example
 .env*
 !.env.example
+node_modules/
+.parcel-cache/
