@@ -21,6 +21,14 @@ jobs:
           npm ci
           npm run build
 
+      - name: Debug secrets
+        run: |
+          echo "token length: ${#CF_TOKEN}"
+          echo "account id length: ${#CF_ACCOUNT}"
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
