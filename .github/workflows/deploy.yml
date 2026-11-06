@@ -9,17 +9,22 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write # Allows GitHub to display the deployment status
+    # permissions:
+    #   contents: read
+    #   deployments: write # Allows GitHub to display the deployment status
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Install Node & Build
         run: |
-          npm ci
+          npm install
           npm run build
 
       - name: Debug secrets
@@ -38,4 +43,4 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           command: deploy # pages deploy dist --project-name=jupiter --branch=main
           # projectName: jupiter
-          # directory: dist # Change to your framework's build output directory
+          # directory: dist # Change to your framework's build output directory 794taxi00mew
