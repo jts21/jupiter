@@ -41,4 +41,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          command: pages deploy dist --project-name=jupiter --branch=main
+          command: npx wrangler pages deploy ./dist # pages deploy dist --project-name=jupiter --branch=main
