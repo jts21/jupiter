@@ -1,80 +1,103 @@
-<!DOCTYPE html><html lang=en><title>Products - Jupiter Technology Solutions</title><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css rel=stylesheet><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js></script><style>.header-img{background-image:url(header.c67bbf04.jpg);background-position:50%;background-size:cover;height:282px}.mortgage-card{max-width:760px}.mortgage-result{font-size:1.15rem;font-weight:600}</style><body>
-  <div class=bg-white>
-    <header class="header-img img-fluid p-5 text-end text-white">
-      <h1 class=display-3>Jupiter Technology Solutions</h1>
-      <p class=fs-6>Trusted Technology Solutions Provider</p>
+<!DOCTYPE html><html lang="en"><head>
+  <title>Products - Jupiter Technology Solutions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>.header-img {
+  background-image: url("header.12f8a6be.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 282px;
+}
+
+.mortgage-card {
+  max-width: 760px;
+}
+
+.mortgage-result {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+  <div class="bg-white">
+    <header class="img-fluid p-5 text-end text-white header-img">
+      <h1 class="display-3">Jupiter Technology Solutions</h1>
+      <p class="fs-6">Trusted Technology Solutions Provider</p>
     </header>
 
-    <nav class="bg-dark navbar navbar-dark navbar-expand-sm">
-      <div class=container-fluid>
-        <ul class="ms-auto navbar-nav">
-          <li class=nav-item>
-            <a class=nav-link href=index.html>Home</a>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
           </li>
-          <li class=nav-item>
-            <a class="active nav-link" href=#>Products</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Products</a>
           </li>
-          <li class=nav-item>
-            <a class=nav-link href=#>Services</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
           </li>
-          <li class=nav-item>
-            <a class="disabled nav-link" href=#>Login</a>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Login</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class="container mt-5">
-      <div class=row>
-        <div class=col-sm-12>
+      <div class="row">
+        <div class="col-sm-12">
           <h2>Our Products</h2>
-          <p>We offer a wide range of innovative products designed to meet your business needs. Our products are built with the latest technology to ensure high performance, security, and reliability.</p>
           <ul>
             <li>DTM-REI: Investing in real estate is challenging, but we have the tools to help.</li>
             <li>Home Security: Customize your home security from a single dashboard.</li>
           </ul>
 
-          <section class="card mortgage-card mt-4" aria-labelledby=mortgage-title>
-            <div class=card-body>
-              <h3 id=mortgage-title class=card-title>DTM-REI Mortgage Calculator</h3>
-              <p class=card-text>Estimate your monthly principal and interest payment.</p>
+          <section class="card mortgage-card mt-4" aria-labelledby="mortgage-title">
+            <div class="card-body">
+              <h3 id="mortgage-title" class="card-title">Mortgage Calculator</h3>
+              <p class="card-text">Estimate your monthly principal and interest payment.</p>
 
-              <form id=mortgage-form>
-                <div class="g-3 row">
-                  <div class=col-md-6>
-                    <label for=purchase-price class=form-label>Purchase price ($)</label>
-                    <input id=purchase-price name=purchasePrice class=form-control type=number min=0.01 step=0.01 required>
+              <form id="mortgage-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="purchase-price" class="form-label">Purchase price ($)</label>
+                    <input id="purchase-price" name="purchasePrice" class="form-control" type="number" min="0.01" step="0.01" required="">
                   </div>
-                  <div class=col-md-6>
-                    <label for=down-payment-percent class=form-label>Down payment (%)</label>
-                    <input id=down-payment-percent name=downPaymentPercent class=form-control type=number min=0 max=100 step=0.01 value=20 required>
+                  <div class="col-md-6">
+                    <label for="down-payment-percent" class="form-label">Down payment (%)</label>
+                    <input id="down-payment-percent" name="downPaymentPercent" class="form-control" type="number" min="0" max="100" step="0.01" value="20" required="">
                   </div>
-                  <div class=col-md-6>
-                    <label for=down-payment-amount class=form-label>Down payment amount ($)</label>
-                    <input id=down-payment-amount name=downPaymentAmount class=form-control value=$0.00 readonly aria-live=polite>
+                  <div class="col-md-6">
+                    <label for="down-payment-amount" class="form-label">Down payment amount ($)</label>
+                    <input id="down-payment-amount" name="downPaymentAmount" class="form-control" type="text" value="$0.00" readonly="" aria-live="polite">
                   </div>
-                  <div class=col-md-6>
-                    <label for=interest-rate class=form-label>Annual interest rate (%)</label>
-                    <input id=interest-rate name=interestRate class=form-control type=number min=0 step=0.01 required>
+                  <div class="col-md-6">
+                    <label for="interest-rate" class="form-label">Annual interest rate (%)</label>
+                    <input id="interest-rate" name="interestRate" class="form-control" type="number" min="0" step="0.01" required="">
                   </div>
-                  <div class=col-md-6>
-                    <label for=loan-term class=form-label>Loan term (years)</label>
-                    <input id=loan-term name=loanTerm class=form-control type=number min=1 step=1 value=30 required>
+                  <div class="col-md-6">
+                    <label for="loan-term" class="form-label">Loan term (years)</label>
+                    <input id="loan-term" name="loanTerm" class="form-control" type="number" min="1" step="1" value="30" required="">
                   </div>
-                  <div class=col-md-6>
-                    <label for=closing-cost-percent class=form-label>Closing cost (%)</label>
-                    <input id=closing-cost-percent name=closingCostPercent class=form-control type=number min=0 step=0.01 value=0 required>
+                  <div class="col-md-6">
+                    <label for="closing-cost-percent" class="form-label">Closing cost (%)</label>
+                    <input id="closing-cost-percent" name="closingCostPercent" class="form-control" type="number" min="0" step="0.01" value="0" required="">
                   </div>
-                  <div class=col-12>
-                    <button class="btn btn-primary" data-test=calculate-mortgage>Calculate</button>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary" data-test="calculate-mortgage">Calculate</button>
                   </div>
                 </div>
               </form>
 
-              <p id=mortgage-error class="mt-3 text-danger" role=alert></p>
-              <p id=total-purchase-cost class="mb-1 mortgage-result" data-test=total-purchase-cost aria-live=polite hidden></p>
-              <p id=mortgage-result class=mortgage-result data-test=mortgage-result aria-live=polite hidden></p>
-              <p class="mb-0 small text-secondary">Estimate excludes property taxes, homeowners insurance, and other costs.</p>
+              <p id="mortgage-error" class="text-danger mt-3" role="alert"></p>
+              <p id="total-purchase-cost" class="mortgage-result mb-1" data-test="total-purchase-cost" aria-live="polite" hidden=""></p>
+              <p id="mortgage-result" class="mortgage-result" data-test="mortgage-result" aria-live="polite" hidden=""></p>
+              <p class="text-secondary small mb-0">Estimate excludes property taxes, homeowners insurance, and other costs.</p>
             </div>
           </section>
         </div>
@@ -82,11 +105,58 @@
     </div>
   </div>
 
-  <script>const mortgageForm=document.getElementById("mortgage-form"),mortgageError=document.getElementById("mortgage-error"),mortgageResult=document.getElementById("mortgage-result"),totalPurchaseCostResult=document.getElementById("total-purchase-cost"),purchasePriceInput=mortgageForm.elements.purchasePrice,downPaymentPercentInput=mortgageForm.elements.downPaymentPercent,downPaymentAmountInput=mortgageForm.elements.downPaymentAmount,currency=new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"});function updateDownPaymentAmount(){let e=Number(purchasePriceInput.value),t=Number(downPaymentPercentInput.value);downPaymentAmountInput.value=e>0&&""!==downPaymentPercentInput.value&&t>=0&&t<=100?currency.format(e*t/100):""}purchasePriceInput.addEventListener("input",updateDownPaymentAmount),downPaymentPercentInput.addEventListener("input",updateDownPaymentAmount),mortgageForm.addEventListener("submit",e=>{e.preventDefault();let t=Number(purchasePriceInput.value),n=Number(downPaymentPercentInput.value),r=Number(mortgageForm.elements.interestRate.value),o=Number(mortgageForm.elements.loanTerm.value),m=Number(mortgageForm.elements.closingCostPercent.value);if(t<=0||n<0||n>100||r<0||o<1||m<0){mortgageError.textContent="Enter a valid purchase price, down payment, interest rate, loan term, and closing cost.",mortgageResult.hidden=!0,totalPurchaseCostResult.hidden=!0;return}let a=t*n/100,u=t-a,c=r/100/12,s=12*o;mortgageError.textContent="",totalPurchaseCostResult.textContent=`Estimated cash needed before mortgage: ${currency.format(a+t*m/100)}`,totalPurchaseCostResult.hidden=!1,mortgageResult.textContent=`Estimated monthly payment: ${currency.format(0===c?u/s:u*c/(1-(1+c)**-s))}`,mortgageResult.hidden=!1});</script>
+  <script>const mortgageForm = document.getElementById('mortgage-form');
+const mortgageError = document.getElementById('mortgage-error');
+const mortgageResult = document.getElementById('mortgage-result');
+const totalPurchaseCostResult = document.getElementById('total-purchase-cost');
+const purchasePriceInput = mortgageForm.elements.purchasePrice;
+const downPaymentPercentInput = mortgageForm.elements.downPaymentPercent;
+const downPaymentAmountInput = mortgageForm.elements.downPaymentAmount;
+const currency = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD'
+});
+function updateDownPaymentAmount() {
+    const purchasePrice = Number(purchasePriceInput.value);
+    const downPaymentPercent = Number(downPaymentPercentInput.value);
+    const isValid = purchasePrice > 0 && downPaymentPercentInput.value !== '' && downPaymentPercent >= 0 && downPaymentPercent <= 100;
+    downPaymentAmountInput.value = isValid ? currency.format(purchasePrice * downPaymentPercent / 100) : '';
+}
+purchasePriceInput.addEventListener('input', updateDownPaymentAmount);
+downPaymentPercentInput.addEventListener('input', updateDownPaymentAmount);
+mortgageForm.addEventListener('submit', (event)=>{
+    event.preventDefault();
+    const purchasePrice = Number(purchasePriceInput.value);
+    const downPaymentPercent = Number(downPaymentPercentInput.value);
+    const annualRate = Number(mortgageForm.elements.interestRate.value);
+    const loanTermYears = Number(mortgageForm.elements.loanTerm.value);
+    const closingCostPercent = Number(mortgageForm.elements.closingCostPercent.value);
+    if (purchasePrice <= 0 || downPaymentPercent < 0 || downPaymentPercent > 100 || annualRate < 0 || loanTermYears < 1 || closingCostPercent < 0) {
+        mortgageError.textContent = 'Enter a valid purchase price, down payment, interest rate, loan term, and closing cost.';
+        mortgageResult.hidden = true;
+        totalPurchaseCostResult.hidden = true;
+        return;
+    }
+    const downPayment = purchasePrice * downPaymentPercent / 100;
+    const closingCosts = purchasePrice * closingCostPercent / 100;
+    const upfrontCashNeeded = downPayment + closingCosts;
+    const principal = purchasePrice - downPayment;
+    const monthlyRate = annualRate / 100 / 12;
+    const numberOfPayments = loanTermYears * 12;
+    const monthlyPayment = monthlyRate === 0 ? principal / numberOfPayments : principal * monthlyRate / (1 - (1 + monthlyRate) ** -numberOfPayments);
+    mortgageError.textContent = '';
+    totalPurchaseCostResult.textContent = `Estimated cash needed before mortgage: ${currency.format(upfrontCashNeeded)}`;
+    totalPurchaseCostResult.hidden = false;
+    mortgageResult.textContent = `Estimated monthly payment: ${currency.format(monthlyPayment)}`;
+    mortgageResult.hidden = false;
+});
 
-  <footer class="bg-dark mt-5 p-5 text-center text-white">
+</script>
+
+  <footer class="mt-5 p-5 bg-dark text-white text-center">
     <p>© 2024 Jupiter Technology Solutions LLC. | New York </p>
     <p>Email: kaiser.al@jupiterts.com</p>
   </footer>
 
 
+<script src="/products.29447368.js"></script></body></html>
