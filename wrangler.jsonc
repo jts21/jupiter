@@ -2,11 +2,5 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "delicate-bird-fb31",
   "pages_build_output_dir": "./dist",
-  "compatibility_date": "2026-07-07",
-  "observability": {
-    "enabled": true
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+  "compatibility_date": "2026-07-07"
 }
